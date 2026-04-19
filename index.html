@@ -180,9 +180,31 @@
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px; font-size: 1.1rem; }
 
         /* HORARIO */
-        .hours { padding: 80px 10%; text-align: center; background: var(--texto-oscuro); color: white; }
-        .hours h2 { color: var(--rojo-chichilo); font-size: 2.5rem; }
+         .hours {
+            padding: 80px 10%;
+            text-align: center;
+            color: white;
+            position: relative;
+            background-image: url('Cantina%20Chichilo%20de%20Buenos%20Aires_files/NOMBRE_DE_TU_IMAGEN.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .hours::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.7); /* clave para que se vea pro */
+        }
+        
+        .hours * {
+            position: relative;
+            z-index: 2;
+        }
 
+
+
+        
         /* CONTACTO */
         .contact { padding: 80px 10%; background: white; }
         .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
@@ -198,28 +220,7 @@
             .navbar { flex-direction: column; gap: 15px; }
         }
 
-            .hours {
-    padding: 80px 10%;
-    text-align: center;
-    color: white;
-    position: relative;
-    background-image: url('Cantina%20Chichilo%20de%20Buenos%20Aires_files/NOMBRE_DE_TU_IMAGEN.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.hours::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.7); /* clave para que se vea pro */
-}
-
-.hours * {
-    position: relative;
-    z-index: 2;
-}
-
+           
 
 
 
