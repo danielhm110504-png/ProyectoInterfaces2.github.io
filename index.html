@@ -140,9 +140,9 @@
         .specialties h2 { font-family: var(--fuente-titulos); font-size: 3rem; margin-bottom: 40px; }
 
         .specialties-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
         }
 
         .food-card {
@@ -160,9 +160,10 @@
         }
 
         .food-img-container {
-            height: 250px;
-            background-size: cover;
-            background-position: center;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         }
 
         .food-card h4 {
@@ -305,7 +306,7 @@
     <section id="horario" class="hours">
         <h2>Horarios de atención</h2>
         <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 20px;">
-            <div><h3>Cena</h3><p>Jueves a sábado<br><strong>20:30 – 23:30 HRS</strong></p></div>
+            <div><h3>Cena</h3><p>Jueves a sábado<br><strong>20:30 – 00:00 HRS</strong></p></div>
             <div><h3>Almuerzo</h3><p>Sábados y domingos<br><strong>12:30 – 14:30 HRS</strong></p></div>
         </div>
     </section>
