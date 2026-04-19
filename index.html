@@ -197,6 +197,40 @@
             .hero h1 { font-size: 2.8rem; }
             .navbar { flex-direction: column; gap: 15px; }
         }
+
+            .hours {
+                padding: 80px 10%;
+                text-align: center;
+                color: white;
+                position: relative;
+                background-image: url('Cantina%20Chichilo%20de%20Buenos%20Aires_files/NOMBRE_DE_TU_IMAGEN.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            
+            .hours::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(0,0,0,0.7); /* clave para que se vea pro */
+            }
+            
+            .hours * {
+                position: relative;
+                z-index: 2;
+            }
+
+        .hours h2 {
+    color: var(--rojo-chichilo);
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+        
     </style>
 </head>
 <body>
